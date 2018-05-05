@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('labelA.db')
+conn = sqlite3.connect('C:\\xampp\\htdocs\\Python\\LabelA\\labelA.db')
 cursor = conn.cursor()
 
 class Customer():
