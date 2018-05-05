@@ -8,10 +8,6 @@ import os
 conn = sqlite3.connect('labelA.db')
 cursor = conn.cursor()
 
-cursor.execute("SELECT * FROM customer")
-
-
-
 if os.path.isfile('labelA.db') == False :
 
     create_db('labelA.db')
@@ -69,11 +65,7 @@ def create_db() :
         stock int
     )""")
 
+    conn.commit()
+    conn.close()
 
-def create_dummy_data(amount) :
-
-    while amount >= 0 :
-
-        amount -= 1
-
-        Customer.new_customer(Customer)
+cursor.execute("SELECT * FROM customer")
