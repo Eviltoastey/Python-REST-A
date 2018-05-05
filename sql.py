@@ -1,8 +1,5 @@
 import sqlite3
 from entity.customer import Customer
-from entity.customer import Customer
-from entity.customer import Customer
-from entity.customer import Customer
 import os
 
 conn = sqlite3.connect('labelA.db')
